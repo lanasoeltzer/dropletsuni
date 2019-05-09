@@ -115,7 +115,7 @@ res = (y - poly_function(x, *popt)) / np.sqrt(y)
 print('chi^2 = %f, ndof = %d, chi^2_red = %f +- %f' % (chi_sq, ndof, chi_sq_red, chi_sq_red_err))
 
 plt.figure(10)
-plt.plot(x, y, label='data', lw=1)
+plt.errorbar(x, y, label='data', lw=1)
 plt.plot(x, poly_function(x, *popt), 'k-', label='fit')
 plt.legend()
 
@@ -213,3 +213,6 @@ mittelwert = np.mean(abstand)
 print("mittelwert : ", mittelwert)
 
 plt.show()
+
+
+
