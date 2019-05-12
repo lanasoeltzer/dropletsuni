@@ -3,7 +3,6 @@ import matplotlib.patches as patches
 import numpy as np
 from skimage import exposure
 import skimage
-import cv2
 import os
 from skimage import io
 from scipy.signal import argrelmax
@@ -11,8 +10,8 @@ from scipy.optimize import curve_fit
 from scipy import special
 
 ###bild laden
-filename = os.path.join("X:\\user\\Lana", 'Bild43_20190424.bmp')
-bild = io.imread(r"X:\user\Lana\Bild43_20190424.bmp")
+filename = os.path.join('images','bild43_20190424.bmp')
+bild = io.imread(filename)
 print(bild.shape)
 plt.gray()
 
